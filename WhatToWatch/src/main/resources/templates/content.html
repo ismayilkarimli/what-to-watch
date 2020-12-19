@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="/css/content-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body id="body">
+    <div class="container-fluid" th:object="${content}">
+        <div id="poster">
+            <img th:src="*{poster}?:@{/images/background.png}" alt="content poster">
+        </div>
+
+        <div id="info-1">
+            <h4>Title: <span th:text="*{title}"></span></h4>
+            <h4>Content type: <span th:text="*{type}"></span></h4>
+            <h4>Genre: <span th:text="*{genre}"></span></h4>
+            <h4>Release Date: <span th:text="*{releaseDate}"></span></h4>
+            <h4>Year: <span th:text="*{year}"></span></h4>
+            <h4>Runtime: <span th:text="*{runtime}"></span></h4>
+            <h4>Metascore: <span th:text="*{metascore}"></span></h4>
+            <h4>IMDb Rating: <span th:text="*{imdbRating}"></span></h4>
+            <h4>Rotten Tomatoes: <span th:text="*{rottenTomatoesRating}"></span></h4>
+            <h4>Rated: <span th:text="*{rated}"></span></h4>
+        </div>
+        <div id="plot">
+            <h4>Plot: <span th:text="*{plot}"></span></h4>
+        </div>
+        <h1 id="info-border">Additional Info</h1>
+        <div id="info-2" th:object="${content}">
+            <h4>Director: <span th:text="*{director}"></span></h4>
+            <h4>Actors: <span th:text="*{actors}"></span></h4>
+            <h4>Writer: <span th:text="*{writer}"></span></h4>
+            <h4>Awards: <span th:text="*{awards}"></span></h4>
+            <h4>IMDb ID: <span th:text="*{imdbId}"></span></h4>
+        </div>
+
+        <a id="homebutton" type="button" class="btn btn-secondary" th:href="@{/}">Go Home</a>
+    </div>
+</body>
+
+</html>

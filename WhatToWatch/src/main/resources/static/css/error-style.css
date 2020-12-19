@@ -1,0 +1,35 @@
+body {
+    background: #ECE6FF;
+}
+
+#warningtext {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 50%;
+    height: 60%;
+    padding: 40px;
+    padding-top: 13%;
+    border-left: 3px solid black;
+    float: right;
+}
+
+#homeicon {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    float: left;
+    animation: float 2.5s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-13px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}

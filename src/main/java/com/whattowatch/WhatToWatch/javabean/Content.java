@@ -1,9 +1,7 @@
 package com.whattowatch.WhatToWatch.javabean;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
 
-@Data
 public class Content {
     public String getTitle() {
         return title;

@@ -31,5 +31,6 @@ docker run -p 8080:8080 ismayilkarimli/wtw:23
 ```
 ###### (Ensure that port 8080 is not used)
 
-### Note:
-The project is not complete, therefore UI/UX is awful.
+### Notes:
+1. The project is not complete, therefore UI/UX is awful.
+2. There are probably bugs somewhere.

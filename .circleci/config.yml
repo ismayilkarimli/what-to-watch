@@ -9,6 +9,6 @@ jobs:
       - checkout
       - run: mvn dependency:go-offline
       - run: mvn clean package
-      - run: mvn clean compile jib:build -Djib.to.auth.username=$DOCKER_USERNAME -Djib.to.auth.password=$DOCKER_PASS -Dimage=ismayilkarimli/as02:$CIRCLE_BUILD_NUM
+      - run: mvn clean compile jib:build -Djib.to.auth.username=$DOCKER_USERNAME -Djib.to.auth.password=$DOCKER_PASS -Dimage=ismayilkarimli/wtw:$CIRCLE_BUILD_NUM
 
 

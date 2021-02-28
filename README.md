@@ -14,7 +14,7 @@ git clone https://github.com/ismayilkarimli/what-to-watch $HOME/wtw
 ```
 #### Docker:
 ```bash
-docker pull ismayilkarimli/wtw:27
+docker pull ismayilkarimli/wtw:36
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ or import it to the IDE of your choice and run from there
 
 #### Docker:
 ```
-docker run -p 8080:8080 ismayilkarimli/wtw:27
+docker run -p 8080:8080 ismayilkarimli/wtw:36
 ```
 ###### (Ensure that port 8080 is not used)
 
